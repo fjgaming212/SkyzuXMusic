@@ -54,7 +54,7 @@ async def alive(client: Client, message: Message):
 
 ༄ **Service Uptime : `{uptime}`**
 
-**Thanks For Using Me ♥️**""",
+**Thanks For Using Me ✨**""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
