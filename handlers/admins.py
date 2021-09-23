@@ -28,10 +28,10 @@ async def update_admin(client, message):
                      [
                          [
                              InlineKeyboardButton(
-                                 "📣 Channel", url=f"https://t.me/Skyzuproject"
+                                 "ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/Skyzuproject"
                              ),
                              InlineKeyboardButton(
-                                 "👑 OWNER", url=f"https://t.me/skyzuuuu"
+                                 "ᴏᴡɴᴇʀ", url=f"https://t.me/skyzuuuu"
                              )
                          ]
                      ]
