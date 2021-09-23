@@ -23,7 +23,20 @@ async def update_admin(client, message):
     for u in new_ads:
         new_admins.append(u.user.id)
     admins[message.chat.id] = new_admins
-    await client.send_message(message.chat.id, "✅ Bot **reload correctly !**\n\n• **Admin list** has been **updated !**")
+    await client.send_message(message.chat.id, "✅ Bot **reload correctly !**\n\n• **Admin list** has been **updated !**""",
+                 reply_markup=InlineKeyboardMarkup(
+                     [
+                         [
+                             InlineKeyboardButton(
+                                 "📣 Channel", url=f"https://t.me/Skyzuproject"
+                             ),
+                             InlineKeyboardButton(
+                                 "👑 OWNER", url=f"https://t.me/skyzuuuu"
+                             )
+                         ]
+                     ]
+                 )
+                             )
 
 
 @Client.on_message(command(["pause", f"pause@{BOT_USERNAME}"]) & other_filters)
