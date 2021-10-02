@@ -32,24 +32,24 @@ async def _human_time_duration(seconds):
 @Client.on_message(command("start") & filters.private & ~filters.edited)
 async def start_(client: Client, message: Message):
     await message.reply_text(
-        f"""<b>👋 **Hello {message.from_user.mention}** ❗ \n
-**[{BOT_NAME}](https://t.me/{BOT_USERNAME}) Is a bot designed to play music in your voice chat groups!**
-**To see some commands for using this bot, click » /help**
+        f"""<b>✨ Selamat Datang {message.from_user.mention}** ❗ \n
+**[{BOT_NAME}](https://t.me/{BOT_USERNAME}) memungkinkan anda untuk memutar musik pada grup melalui obrolan suara yang baru di Telegram!!**
+**💡 Untuk mengetahui semua perintah Bot dan bagaimana cara kerja nya dengan » /help**
 </b>""",
         reply_markup=InlineKeyboardMarkup(
             [ 
                 [
                     InlineKeyboardButton(
-                        "➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ​ ➕", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")
+                        "➕ Tambahkan Saya Ke Group ➕", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")
                 ],[
                     InlineKeyboardButton(
-                        "ʀᴇᴘᴏ​​", url="https://github.com/Askarbot/SkyzuXMusic"
+                        "Repo", url="https://github.com/fjgaming212/SkyzuXMusic"
                     ),
                     InlineKeyboardButton(
-                        "ᴜᴘᴅᴀᴛᴇs", url=f"https://t.me/{GROUP_SUPPORT}")
+                        "Group support", url=f"https://t.me/{GROUP_SUPPORT}")
                 ],[
                     InlineKeyboardButton(
-                        "ʜᴏᴡ ᴛᴏ ᴜsᴇ ᴍᴇ​ ❓​", callback_data="cbcmds"
+                        "Cara menggunakan bot ​📚", callback_data="cbcmds"
                     )
                 ]
             ]
@@ -71,7 +71,7 @@ async def start(client: Client, message: Message):
 ✅ **I'm active and ready to play music!
 • Start time: `{START_TIME_ISO}`
 
-> Click on button » 📚 **Command** and see all bot commands!
+> Click button » 📚 **Command** Untuk melihat semua perintah bot!
 """,
         reply_markup=InlineKeyboardMarkup(
             [
@@ -93,14 +93,14 @@ async def start(client: Client, message: Message):
 async def help(client: Client, message: Message):
     await message.reply_text(
         f"""<b>👋 **Hello** {message.from_user.mention()}</b>
-**Please press the button below to read the explanation and see the list of available commands !**
+**Silakan tekan tombol di bawah ini untuk membaca penjelasan dan melihat daftar perintah yang tersedia !**
 
 💡 Bot by @{UPDATES_CHANNEL}""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        text=" HOW TO USE ME", callback_data=f"cbguide"
+                        text=" Cara menggunakan bot", callback_data=f"cbguide"
                     )
                 ]
             ]
@@ -112,7 +112,7 @@ async def help_(client: Client, message: Message):
     await message.reply_text(
         f"""<b>👋 **Hello {message.from_user.mention} welcome to the help menu !**</b>
 
-**__In this menu you can open several available command menus, in each command menu there is also a brief explanation of each command__**
+**__Pada menu ini Anda dapat membuka beberapa menu perintah yang tersedia, di setiap menu perintah juga terdapat penjelasan singkat dari masing-masing perintah__**
 
 💡 Bot by @{UPDATES_CHANNEL}""",
         reply_markup=InlineKeyboardMarkup(
