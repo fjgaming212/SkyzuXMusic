@@ -43,7 +43,7 @@ async def start_(client: Client, message: Message):
                         "➕ Tambahkan Saya Ke Group ➕", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")
                 ],[
                     InlineKeyboardButton(
-                        "Repo", url="https://github.com/fjgaming212/SkyzuXMusic"
+                        "Repo", url="https://github.com/fjgaming212/Bot-Musicv2"
                     ),
                     InlineKeyboardButton(
                         "Group support", url=f"https://t.me/{GROUP_SUPPORT}")
